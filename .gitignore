@@ -1,0 +1,19 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build outputs and local tooling
+**/bin/
+**/obj/
+**/__pycache__/
+.vs/
+.vscode/
+
+# Local copies outside the release files
+dist/s/
+
+# Sample project used to verify the build environment
+windows-wpf/shared/projects/WpfHello/

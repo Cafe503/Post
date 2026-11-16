@@ -1,0 +1,42 @@
+name: windows-wpf
+
+services:
+  windows:
+    image: ${WINDOWS_IMAGE:-dockurr/windows:latest}
+    container_name: windows-wpf
+    environment:
+      VERSION: "11"
+      LANGUAGE: "English"
+      REGION: "pl-PL"
+      KEYBOARD: "pl-PL"
+      CPU_CORES: "8"
+      RAM_SIZE: "12G"
+      DISK_SIZE: "128G"
+      USERNAME: ${WINDOWS_USERNAME:-potter}
+      PASSWORD: ${WINDOWS_PASSWORD:?Ustaw WINDOWS_PASSWORD w pliku .env}
+      QMP: unix:/storage/qmp.sock,server=on,wait=off
+      ARGUMENTS: >-
+        -device virtio-serial-pci,id=virtio-serial0
+        -chardev socket,path=/storage/qga.sock,server=on,wait=off,id=qga0
+        -device virtserialport,chardev=qga0,name=org.qemu.guest_agent.0
+      LOG: "Y"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "127.0.0.1:8006:8006"
+      - "127.0.0.1:3389:3389/tcp"
+      - "127.0.0.1:3389:3389/udp"
+    volumes:
+      - ./storage:/storage
+      - ./shared:/shared
+      - ./oem:/oem:ro
+    restart: unless-stopped
+    stop_grace_period: 2m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

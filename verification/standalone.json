@@ -1,0 +1,26 @@
+﻿{
+    "timestamp":  "2026-10-05T21:47:36.0446214+02:00",
+    "targetFramework":  ".NETFramework,Version=v4.8",
+    "referencedAssemblies":  [
+                                 "mscorlib",
+                                 "PresentationFramework",
+                                 "System",
+                                 "WindowsBase",
+                                 "System.Xaml",
+                                 "PresentationCore",
+                                 "System.IO.Compression",
+                                 "System.Net.Http",
+                                 "System.Web.Extensions",
+                                 "System.Core",
+                                 "System.Xml",
+                                 "System.IO.Compression.FileSystem"
+                             ],
+    "standaloneFiles":  [
+                            "Postinstall.exe"
+                        ],
+    "sha256":  "c69b398d16f11235ec75b043bb2dcf0c18108a234326eeeac1129918975001c8",
+    "responding":  true,
+    "title":  "Postinstall — programy dla Windows",
+    "sessionId":  1,
+    "passed":  true
+}

@@ -1,0 +1,24 @@
+﻿{
+    "timestamp":  "2026-10-05T18:13:14.6222581+02:00",
+    "programme":  "audacity-mp4-test * - Audacity 4.0",
+    "windowTitles":  [
+                         "audacity-mp4-test * - Audacity 4.0"
+                     ],
+    "sessionId":  1,
+    "responding":  true,
+    "ffmpeg":  [
+                   {
+                       "ModuleName":  "avformat-62.dll",
+                       "FileName":  "C:\\Program Files\\FFmpeg for Audacity\\avformat-62.dll"
+                   },
+                   {
+                       "ModuleName":  "avutil-60.dll",
+                       "FileName":  "C:\\Program Files\\FFmpeg for Audacity\\avutil-60.dll"
+                   },
+                   {
+                       "ModuleName":  "avcodec-62.dll",
+                       "FileName":  "C:\\Program Files\\FFmpeg for Audacity\\avcodec-62.dll"
+                   }
+               ],
+    "passed":  true
+}

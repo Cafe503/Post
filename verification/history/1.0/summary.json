@@ -1,0 +1,123 @@
+{
+  "generated": "2026-10-05T16:31:20.893648+00:00",
+  "application": "Postinstall 1.0",
+  "targetFramework": ".NETFramework,Version=v4.8",
+  "binary": "../../../dist/history/1.0/Postinstall.exe",
+  "sizeBytes": 158208,
+  "sha256": "18cef4d1686a9b601ca7480f2523ceefcc305ed3dda6afb2d31d2175d749866e",
+  "windows": {
+    "edition": "Windows 11 Pro",
+    "version": "10.0.26200",
+    "architecture": "x64",
+    "winget": "v1.29.380"
+  },
+  "passed": true,
+  "checkCount": 148,
+  "testRuns": [
+    {
+      "report": "../../lifecycle.json",
+      "timestamp": "2026-10-05T17:43:50.2094583+02:00",
+      "checks": 17,
+      "passed": true
+    },
+    {
+      "report": "../../addons.json",
+      "timestamp": "2026-10-05T18:29:00.4693390+02:00",
+      "checks": 19,
+      "passed": true
+    },
+    {
+      "report": "../../cdburnerxp.json",
+      "timestamp": "2026-10-05T18:00:03.6402733+02:00",
+      "checks": 15,
+      "passed": true
+    },
+    {
+      "report": "../../sources.json",
+      "timestamp": "2026-10-05T17:58:02.2845909+02:00",
+      "checks": 28,
+      "passed": true
+    },
+    {
+      "report": "../../bootstrap.json",
+      "timestamp": "2026-10-05T18:18:31.4074307+02:00",
+      "checks": 15,
+      "passed": true
+    },
+    {
+      "report": "../../ui.json",
+      "timestamp": "2026-10-05T18:15:55.6512588+02:00",
+      "checks": 9,
+      "passed": true
+    },
+    {
+      "report": "../../ui-queue.json",
+      "timestamp": "2026-10-05T18:16:14.0314249+02:00",
+      "checks": 4,
+      "passed": true
+    },
+    {
+      "report": "../../irfan-lifecycle.json",
+      "timestamp": "2026-10-05T18:24:32.5243966+02:00",
+      "checks": 16,
+      "passed": true
+    },
+    {
+      "report": "../../remove-addons.json",
+      "timestamp": "2026-10-05T18:30:04.9027058+02:00",
+      "checks": 23,
+      "passed": true
+    },
+    {
+      "report": "../../audacity-mp4.json",
+      "timestamp": "2026-10-05T18:13:14.6222581+02:00",
+      "checks": 1,
+      "passed": true
+    },
+    {
+      "report": "standalone.json",
+      "timestamp": "2026-10-05T18:29:35.7282150+02:00",
+      "checks": 1,
+      "passed": true
+    }
+  ],
+  "realInstallationAndRemoval": [
+    "7-Zip",
+    "PuTTY",
+    "CDBurnerXP",
+    "Audacity + FFmpeg",
+    "IrfanView + Polish language",
+    "LibreOffice + Polish offline help"
+  ],
+  "mp4Import": "Audacity loaded synthetic MP4; avformat-62.dll, avcodec-62.dll and avutil-60.dll loaded from the dedicated FFmpeg folder.",
+  "standalone": "Executed from a directory containing only Postinstall.exe; only framework assemblies referenced.",
+  "limitations": [
+    "Windows 10 and ARM64 not separately tested.",
+    "Other WinGet catalogue entries verified by live package metadata, not full installation.",
+    "CorelDRAW: current official installer download and publisher signature verified; full suite installation and activation not tested.",
+    "WinGet bootstrap tested by upgrading an existing App Installer installation."
+  ],
+  "sourceHashes": {
+    "App.xaml": "e7bed65ca3f151561586a2c65265ace75fd95cfe23d93f6da6ca79320c054c55",
+    "App.xaml.cs": "74b545762df8921a6aea4ed0ff74fa6cd96f1e913c4b4d5f4e26274b153763be",
+    "MainWindow.xaml": "3d992b1c1358aede0e7c50bbcb49acdf0f6c4bedf9ac078db580ee2d21b5d347",
+    "MainWindow.xaml.cs": "82613044b7870c6cffed0a42ab5666c4a65ea1bf79726c247870e6459498b7da",
+    "Models/Catalog.cs": "85a2d83b9ed28e99b4ba363c04f9296a73e017ec286220a6457c7f3245459fd6",
+    "Models/MainViewModel.cs": "30c1697eada937a76d3cf52d0031fdb0dbc69899644bb542c0bc71a7b6b00bfa",
+    "Postinstall.csproj": "57ad2fdaa4d60b2acae51593572eb95aba528b7dbbf34cab8c57c5bd1bddd7f4",
+    "Properties/AssemblyInfo.cs": "637d6887439211a0c9cfac53cb5071cb3a64c08b4d996f90fec49fb088d6301c",
+    "Resources/Bootstrap-WinGet.ps1": "66b1af86562221a3e1e1568a273ceefbad6898efcfb4b19d993572bd48370c86",
+    "Resources/Postinstall.ico": "46ed81ddda7892901fbf6e1bedf4252052e5b0e61d950b0aa9f4c5d6843c88ef",
+    "Services/DirectInstallers.cs": "3ca079614bc014c543e28f499b3e4e7375f4c982430616866b9ae47a999e09c4",
+    "Services/Downloads.cs": "44a60ce974a66090c84e85f3d417474db5c0c0e6a55ef60d6105c12d7373a777",
+    "Services/InstallationEngine.cs": "9cca693f2a09863f09159b2e968443284dfe4ae2d05db7573918ea636ec9c358",
+    "Services/InstalledInventory.cs": "5ac979466f3f29695eeffedaf6875530748aabb11fb2822877d90c73937fa9e9",
+    "Services/ProcessRunner.cs": "cfaf45d2ea7202cae39a439705f02531b9ce3b6d6dd592927fedf5bc61f12fdd",
+    "Services/SessionLog.cs": "165e3d36b9995ed5fdbec13c6cf37ad47facd828c6c01964c6483ffd6a54fc9e",
+    "Services/WingetService.cs": "803440dd67fb486afa1212fac5fe3ad598c7169540d4ed5fb0dfad976f7934fd",
+    "Tests/IntegrationTests.cs": "af983fcc92cf430fc6b68d51d7d7cb332b8694e354a6ec8eb6360ee9e4f265f5",
+    "Tests/IntegrationTests.csproj": "afad9437651b4ec447c2056c0a600fdbb5f6a195278102748f81c4addf3e258c",
+    "app.manifest": "dddf998ea6e5ff463c58f0d9b3333c3884dfcc122178e683c0a3491b9563bed5",
+    "build.ps1": "71f27517f4070a56187cd09a0526052b4960774974685f3509bb4c5722de92e2"
+  }
+}

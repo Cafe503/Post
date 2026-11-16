@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-10-05T14:59:01.741454+00:00",
+  "windows": "Windows 11 Pro (build 26200)",
+  "resources": {
+    "cpu_threads": 8,
+    "ram_gib": 12,
+    "disk_gib": 128,
+    "kvm": true
+  },
+  "visual_studio_build_tools": "18.10.12224.181",
+  "dotnet_sdks": [
+    "8.0.425",
+    "10.0.401"
+  ],
+  "oem_checks": [
+    {
+      "result": "passed",
+      "sdk": "8.0.425",
+      "framework": "net8.0-windows"
+    },
+    {
+      "result": "passed",
+      "sdk": "10.0.401",
+      "framework": "net10.0-windows"
+    },
+    {
+      "result": "passed",
+      "tool": "MSBuild",
+      "framework": "v4.8"
+    },
+    {
+      "result": "passed",
+      "tool": "MSBuild",
+      "framework": "v4.8.1"
+    }
+  ],
+  "host_build": {
+    "project": "projects/WpfHello/WpfHello.csproj",
+    "frameworks": [
+      "net8.0-windows",
+      "net10.0-windows"
+    ],
+    "result": "passed",
+    "warnings": 0,
+    "errors": 0
+  },
+  "rdp": "127.0.0.1:3389",
+  "desktop": "http://127.0.0.1:8006",
+  "reboot_required": false
+}

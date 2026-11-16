@@ -1,0 +1,8 @@
+.env
+storage/
+shared/artifacts/
+shared/status/
+**/bin/
+**/obj/
+__pycache__/
+oem/*.msi

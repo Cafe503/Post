@@ -1,0 +1,49 @@
+{
+  "version": "1.1.0",
+  "environment": "Windows 11 x64, .NET Framework 4.8.1",
+  "applications": [
+    "Synology Chat",
+    "Synology Drive",
+    "7-Zip",
+    "Google Chrome"
+  ],
+  "build": {
+    "result": "passed",
+    "warnings": 0,
+    "errors": 0,
+    "file": "dist/Postinstall.exe",
+    "sha256": "18767b48bbf14959ee359d5008dbb918e14058c46256cede50445c4f7654dd65"
+  },
+  "reports": {
+    "sources": {
+      "file": "sources.json",
+      "passed": 18,
+      "failed": 0
+    },
+    "ui": {
+      "file": "ui.json",
+      "passed": 11,
+      "failed": 0
+    },
+    "ui-queue": {
+      "file": "ui-queue.json",
+      "passed": 3,
+      "failed": 0
+    },
+    "lifecycle": {
+      "file": "lifecycle.json",
+      "passed": 22,
+      "failed": 0
+    }
+  },
+  "real_install_and_uninstall": [
+    "Synology Chat",
+    "Synology Drive",
+    "7-Zip",
+    "Google Chrome"
+  ],
+  "limitations": [
+    "Not tested on Windows 10 or ARM64.",
+    "Connection to a Synology NAS was not configured or tested."
+  ]
+}
